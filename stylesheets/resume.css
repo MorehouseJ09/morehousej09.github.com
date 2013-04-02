@@ -1,0 +1,463 @@
+@import url(http://fonts.googleapis.com/css?family=Exo:400,900);
+@-webkit-keyframes rise {
+  /* line 3, animations.css.sass */
+  0% {
+    top: 30em;
+    -webkit-transform: scale(0);
+    opacity: 0; }
+
+  /* line 7, animations.css.sass */
+  50% {
+    top: 15em;
+    -webkit-transform: scale(0); }
+
+  /* line 10, animations.css.sass */
+  82.5% {
+    -webkit-transform: scale(1.05);
+    -webkit-animation-timing-function: ease-out;
+    opacity: 1; }
+
+  /* line 14, animations.css.sass */
+  100% {
+    top: 2em;
+    -webkit-transform: scale(1); } }
+
+@-moz-keyframes rise {
+  /* line 19, animations.css.sass */
+  0% {
+    top: 30em;
+    -moz-transform: scale(0);
+    opacity: 0; }
+
+  /* line 23, animations.css.sass */
+  50% {
+    top: 15em;
+    -moz-transform: scale(0); }
+
+  /* line 26, animations.css.sass */
+  82.5% {
+    -moz-transform: scale(1.05);
+    -moz-animation-timing-function: ease-out;
+    opacity: 1; }
+
+  /* line 30, animations.css.sass */
+  100% {
+    top: 2em;
+    -moz-transform: scale(1); } }
+
+@-webkit-keyframes fade_in {
+  /* line 43, animations.css.sass */
+  0% {
+    opacity: 0; }
+
+  /* line 45, animations.css.sass */
+  50% {
+    opacity: 0; }
+
+  /* line 47, animations.css.sass */
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fade_in {
+  /* line 52, animations.css.sass */
+  0% {
+    opacity: 0; }
+
+  /* line 54, animations.css.sass */
+  50% {
+    opacity: 0; }
+
+  /* line 56, animations.css.sass */
+  100% {
+    opacity: 1; } }
+
+/* line 1, header.sass */
+#header {
+  position: relative;
+  top: 2em;
+  padding: 0 2em 2em 2em;
+  width: 60%;
+  min-width: 450px;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  display: block;
+  overflow-y: auto;
+  background: #d4d4d4 url("../images/debut_dark.png");
+  border: 0.1em solid rgba(255, 255, 255, 0.8);
+  border-radius: 0.2em;
+  box-shadow: 0.4em 0.4em 0.5em rgba(36, 36, 36, 0.8);
+  -webkit-animation: rise 2s;
+  -moz-animation: rise 2s;
+  -o-animation: rise 2s;
+  animation: rise 2s; }
+  /* line 15, mixins.sass */
+  #header > h1 {
+    position: relative;
+    text-align: center;
+    font-family: "Exo" sans-serif;
+    font-size: 4em;
+    color: #191919;
+    text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.2em; }
+  /* line 16, header.sass */
+  #header > h1 {
+    padding: 0;
+    margin: 0;
+    text-shadow: 1.5px 1.5px 1.5px rgba(125, 125, 125, 0.8);
+    font-size: 4.5em;
+    letter-spacing: 0.18em;
+    color: #fba600;
+    text-shadow: -2px -2px 1px #191919, 2px 2px 1px #191919; }
+  /* line 24, header.sass */
+  #header > h2 {
+    font-family: "Exo" sans-serif;
+    font-size: 1.9em;
+    -webkit-animation: fade_in 4s;
+    -moz-animation: fade_in 4s;
+    letter-spacing: 0.1em;
+    color: rgba(225, 225, 225, 0.8);
+    text-shadow: 1.5px 1.5px 1px rgba(36, 36, 36, 0.9);
+    position: relative;
+    display: block;
+    top: 0;
+    margin-top: 0;
+    text-align: center; }
+  /* line 34, header.sass */
+  #header > ul {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0; }
+    /* line 43, header.sass */
+    #header > ul > li {
+      position: relative;
+      display: block;
+      float: left;
+      width: 26.67%;
+      margin-left: 5%;
+      padding: 0; }
+      /* line 52, header.sass */
+      #header > ul > li > a {
+        width: 100%;
+        overflow-y: auto;
+        position: relative;
+        display: block;
+        cursor: pointer;
+        border-radius: 50%;
+        background-color: black;
+        overflow-y: auto;
+        position: relative;
+        border: 2px solid rgba(0, 0, 0, 0.5);
+        -webkit-transition: background-color 2s; }
+        /* line 66, header.sass */
+        #header > ul > li > a:hover {
+          background-color: rgba(255, 255, 255, 0.3); }
+          /* line 69, header.sass */
+          #header > ul > li > a:hover > img {
+            opacity: 0.8; }
+        /* line 73, header.sass */
+        #header > ul > li > a > img {
+          width: 100%;
+          margin: 0 auto;
+          position: relative;
+          display: block;
+          border-radius: 50%;
+          -webkit-transition: opacity 2s; }
+
+/* line 5, resume.css.sass */
+body {
+  background: url("../images/creampaper.png"); }
+  /* line 9, resume.css.sass */
+  body a {
+    color: white; }
+    /* line 12, resume.css.sass */
+    body a:active {
+      color: white; }
+    /* line 15, resume.css.sass */
+    body a:visited {
+      color: white; }
+
+/* line 19, resume.css.sass */
+#forkme {
+  -webkit-animation: fade_in 6s;
+  -moz-animation: fade_in 6s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 150px;
+  width: 150px; }
+  /* line 28, resume.css.sass */
+  #forkme > a {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    cursor: arrow; }
+    /* line 35, resume.css.sass */
+    #forkme > a > img {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      display: block;
+      cursor: pointer; }
+
+/* line 43, resume.css.sass */
+#container {
+  position: relative;
+  width: 90%;
+  top: 2em;
+  margin: 0 auto;
+  padding: 1em;
+  margin-bottom: 20em; }
+
+/* line 52, resume.css.sass */
+#overview {
+  -webkit-animation: fade_in 4s;
+  -moz-animation: fade_in 4s;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  display: block; }
+  /* line 52, mixins.sass */
+  #overview > div:nth-of-type(2n) {
+    margin-top: 1em;
+    background: #d4d4d4 url("../images/debut_dark.png");
+    border: 0.1em solid rgba(255, 255, 255, 0.8);
+    border-radius: 0.2em;
+    box-shadow: 0.4em 0.4em 0.5em rgba(36, 36, 36, 0.8);
+    padding: 1em;
+    font-family: "Exo" sans-serif;
+    font-size: 1.9em;
+    -webkit-animation: fade_in 4s;
+    -moz-animation: fade_in 4s;
+    letter-spacing: 0.1em;
+    color: rgba(225, 225, 225, 0.8);
+    text-shadow: 1.5px 1.5px 1px rgba(36, 36, 36, 0.9);
+    font-size: 1em; }
+    /* line 60, mixins.sass */
+    #overview > div:nth-of-type(2n) a {
+      color: #fba600;
+      margin-left: 1em; }
+      /* line 64, mixins.sass */
+      #overview > div:nth-of-type(2n) a:hover {
+        text-decoration: none; }
+  /* line 69, mixins.sass */
+  #overview > div:nth-of-type(1) {
+    border-bottom: 0.15em solid rgba(0, 0, 0, 0.8); }
+    /* line 15, mixins.sass */
+    #overview > div:nth-of-type(1) > h1 {
+      position: relative;
+      text-align: center;
+      font-family: "Exo" sans-serif;
+      font-size: 4em;
+      color: #191919;
+      text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.8);
+      letter-spacing: 0.2em; }
+    /* line 74, mixins.sass */
+    #overview > div:nth-of-type(1) > h1 {
+      margin-bottom: 0;
+      font-size: 3em; }
+
+/* line 56, resume.css.sass */
+#projects {
+  -webkit-animation: fade_in 4s;
+  -moz-animation: fade_in 4s;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  display: block; }
+  /* line 52, mixins.sass */
+  #projects > div:nth-of-type(2n) {
+    margin-top: 1em;
+    background: #d4d4d4 url("../images/debut_dark.png");
+    border: 0.1em solid rgba(255, 255, 255, 0.8);
+    border-radius: 0.2em;
+    box-shadow: 0.4em 0.4em 0.5em rgba(36, 36, 36, 0.8);
+    padding: 1em;
+    font-family: "Exo" sans-serif;
+    font-size: 1.9em;
+    -webkit-animation: fade_in 4s;
+    -moz-animation: fade_in 4s;
+    letter-spacing: 0.1em;
+    color: rgba(225, 225, 225, 0.8);
+    text-shadow: 1.5px 1.5px 1px rgba(36, 36, 36, 0.9);
+    font-size: 1em; }
+    /* line 60, mixins.sass */
+    #projects > div:nth-of-type(2n) a {
+      color: #fba600;
+      margin-left: 1em; }
+      /* line 64, mixins.sass */
+      #projects > div:nth-of-type(2n) a:hover {
+        text-decoration: none; }
+  /* line 69, mixins.sass */
+  #projects > div:nth-of-type(1) {
+    border-bottom: 0.15em solid rgba(0, 0, 0, 0.8); }
+    /* line 15, mixins.sass */
+    #projects > div:nth-of-type(1) > h1 {
+      position: relative;
+      text-align: center;
+      font-family: "Exo" sans-serif;
+      font-size: 4em;
+      color: #191919;
+      text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.8);
+      letter-spacing: 0.2em; }
+    /* line 74, mixins.sass */
+    #projects > div:nth-of-type(1) > h1 {
+      margin-bottom: 0;
+      font-size: 3em; }
+
+/* line 60, resume.css.sass */
+#experience {
+  -webkit-animation: fade_in 4s;
+  -moz-animation: fade_in 4s;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  display: block; }
+  /* line 52, mixins.sass */
+  #experience > div:nth-of-type(2n) {
+    margin-top: 1em;
+    background: #d4d4d4 url("../images/debut_dark.png");
+    border: 0.1em solid rgba(255, 255, 255, 0.8);
+    border-radius: 0.2em;
+    box-shadow: 0.4em 0.4em 0.5em rgba(36, 36, 36, 0.8);
+    padding: 1em;
+    font-family: "Exo" sans-serif;
+    font-size: 1.9em;
+    -webkit-animation: fade_in 4s;
+    -moz-animation: fade_in 4s;
+    letter-spacing: 0.1em;
+    color: rgba(225, 225, 225, 0.8);
+    text-shadow: 1.5px 1.5px 1px rgba(36, 36, 36, 0.9);
+    font-size: 1em; }
+    /* line 60, mixins.sass */
+    #experience > div:nth-of-type(2n) a {
+      color: #fba600;
+      margin-left: 1em; }
+      /* line 64, mixins.sass */
+      #experience > div:nth-of-type(2n) a:hover {
+        text-decoration: none; }
+  /* line 69, mixins.sass */
+  #experience > div:nth-of-type(1) {
+    border-bottom: 0.15em solid rgba(0, 0, 0, 0.8); }
+    /* line 15, mixins.sass */
+    #experience > div:nth-of-type(1) > h1 {
+      position: relative;
+      text-align: center;
+      font-family: "Exo" sans-serif;
+      font-size: 4em;
+      color: #191919;
+      text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.8);
+      letter-spacing: 0.2em; }
+    /* line 74, mixins.sass */
+    #experience > div:nth-of-type(1) > h1 {
+      margin-bottom: 0;
+      font-size: 3em; }
+
+/* line 64, resume.css.sass */
+#skills {
+  -webkit-animation: fade_in 4s;
+  -moz-animation: fade_in 4s;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  display: block; }
+  /* line 52, mixins.sass */
+  #skills > div:nth-of-type(2n) {
+    margin-top: 1em;
+    background: #d4d4d4 url("../images/debut_dark.png");
+    border: 0.1em solid rgba(255, 255, 255, 0.8);
+    border-radius: 0.2em;
+    box-shadow: 0.4em 0.4em 0.5em rgba(36, 36, 36, 0.8);
+    padding: 1em;
+    font-family: "Exo" sans-serif;
+    font-size: 1.9em;
+    -webkit-animation: fade_in 4s;
+    -moz-animation: fade_in 4s;
+    letter-spacing: 0.1em;
+    color: rgba(225, 225, 225, 0.8);
+    text-shadow: 1.5px 1.5px 1px rgba(36, 36, 36, 0.9);
+    font-size: 1em; }
+    /* line 60, mixins.sass */
+    #skills > div:nth-of-type(2n) a {
+      color: #fba600;
+      margin-left: 1em; }
+      /* line 64, mixins.sass */
+      #skills > div:nth-of-type(2n) a:hover {
+        text-decoration: none; }
+  /* line 69, mixins.sass */
+  #skills > div:nth-of-type(1) {
+    border-bottom: 0.15em solid rgba(0, 0, 0, 0.8); }
+    /* line 15, mixins.sass */
+    #skills > div:nth-of-type(1) > h1 {
+      position: relative;
+      text-align: center;
+      font-family: "Exo" sans-serif;
+      font-size: 4em;
+      color: #191919;
+      text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.8);
+      letter-spacing: 0.2em; }
+    /* line 74, mixins.sass */
+    #skills > div:nth-of-type(1) > h1 {
+      margin-bottom: 0;
+      font-size: 3em; }
+  /* line 69, resume.css.sass */
+  #skills > div:nth-of-type(2) {
+    overflow-y: auto; }
+    /* line 73, resume.css.sass */
+    #skills > div:nth-of-type(2) > div {
+      position: relative;
+      float: left;
+      width: 33%; }
+      /* line 79, resume.css.sass */
+      #skills > div:nth-of-type(2) > div > h2 {
+        text-align: center; }
+
+/* line 83, resume.css.sass */
+#school {
+  -webkit-animation: fade_in 4s;
+  -moz-animation: fade_in 4s;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  display: block; }
+  /* line 52, mixins.sass */
+  #school > div:nth-of-type(2n) {
+    margin-top: 1em;
+    background: #d4d4d4 url("../images/debut_dark.png");
+    border: 0.1em solid rgba(255, 255, 255, 0.8);
+    border-radius: 0.2em;
+    box-shadow: 0.4em 0.4em 0.5em rgba(36, 36, 36, 0.8);
+    padding: 1em;
+    font-family: "Exo" sans-serif;
+    font-size: 1.9em;
+    -webkit-animation: fade_in 4s;
+    -moz-animation: fade_in 4s;
+    letter-spacing: 0.1em;
+    color: rgba(225, 225, 225, 0.8);
+    text-shadow: 1.5px 1.5px 1px rgba(36, 36, 36, 0.9);
+    font-size: 1em; }
+    /* line 60, mixins.sass */
+    #school > div:nth-of-type(2n) a {
+      color: #fba600;
+      margin-left: 1em; }
+      /* line 64, mixins.sass */
+      #school > div:nth-of-type(2n) a:hover {
+        text-decoration: none; }
+  /* line 69, mixins.sass */
+  #school > div:nth-of-type(1) {
+    border-bottom: 0.15em solid rgba(0, 0, 0, 0.8); }
+    /* line 15, mixins.sass */
+    #school > div:nth-of-type(1) > h1 {
+      position: relative;
+      text-align: center;
+      font-family: "Exo" sans-serif;
+      font-size: 4em;
+      color: #191919;
+      text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.8);
+      letter-spacing: 0.2em; }
+    /* line 74, mixins.sass */
+    #school > div:nth-of-type(1) > h1 {
+      margin-bottom: 0;
+      font-size: 3em; }
