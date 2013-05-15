@@ -71,6 +71,78 @@
   100% {
     opacity: 1; } }
 
+@-webkit-keyframes rise {
+  /* line 3, animations.css.sass */
+  0% {
+    top: 30em;
+    -webkit-transform: scale(0);
+    opacity: 0; }
+
+  /* line 7, animations.css.sass */
+  50% {
+    top: 15em;
+    -webkit-transform: scale(0); }
+
+  /* line 10, animations.css.sass */
+  82.5% {
+    -webkit-transform: scale(1.05);
+    -webkit-animation-timing-function: ease-out;
+    opacity: 1; }
+
+  /* line 14, animations.css.sass */
+  100% {
+    top: 2em;
+    -webkit-transform: scale(1); } }
+
+@-moz-keyframes rise {
+  /* line 19, animations.css.sass */
+  0% {
+    top: 30em;
+    -moz-transform: scale(0);
+    opacity: 0; }
+
+  /* line 23, animations.css.sass */
+  50% {
+    top: 15em;
+    -moz-transform: scale(0); }
+
+  /* line 26, animations.css.sass */
+  82.5% {
+    -moz-transform: scale(1.05);
+    -moz-animation-timing-function: ease-out;
+    opacity: 1; }
+
+  /* line 30, animations.css.sass */
+  100% {
+    top: 2em;
+    -moz-transform: scale(1); } }
+
+@-webkit-keyframes fade_in {
+  /* line 43, animations.css.sass */
+  0% {
+    opacity: 0; }
+
+  /* line 45, animations.css.sass */
+  50% {
+    opacity: 0; }
+
+  /* line 47, animations.css.sass */
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fade_in {
+  /* line 52, animations.css.sass */
+  0% {
+    opacity: 0; }
+
+  /* line 54, animations.css.sass */
+  50% {
+    opacity: 0; }
+
+  /* line 56, animations.css.sass */
+  100% {
+    opacity: 1; } }
+
 /* line 1, header.sass */
 #header {
   position: relative;
@@ -90,11 +162,11 @@
   -moz-animation: rise 2s;
   -o-animation: rise 2s;
   animation: rise 2s; }
-  /* line 15, mixins.sass */
+  /* line 16, mixins.sass */
   #header > h1 {
     position: relative;
     text-align: center;
-    font-family: "Exo" sans-serif;
+    font-family: "Exo" arial sans-serif;
     font-size: 4em;
     color: #191919;
     text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.8);
@@ -110,7 +182,7 @@
     text-shadow: -2px -2px 1px #191919, 2px 2px 1px #191919; }
   /* line 24, header.sass */
   #header > h2 {
-    font-family: "Exo" sans-serif;
+    font-family: "Exo" arial sans-serif;
     font-size: 1.9em;
     -webkit-animation: fade_in 4s;
     -moz-animation: fade_in 4s;
@@ -219,7 +291,7 @@ body {
   width: 80%;
   margin: 0 auto;
   display: block; }
-  /* line 52, mixins.sass */
+  /* line 53, mixins.sass */
   #overview > div:nth-of-type(2n) {
     margin-top: 1em;
     background: #d4d4d4 url("../images/debut_dark.png");
@@ -227,7 +299,7 @@ body {
     border-radius: 0.2em;
     box-shadow: 0.4em 0.4em 0.5em rgba(36, 36, 36, 0.8);
     padding: 1em;
-    font-family: "Exo" sans-serif;
+    font-family: "Exo" arial sans-serif;
     font-size: 1.9em;
     -webkit-animation: fade_in 4s;
     -moz-animation: fade_in 4s;
@@ -235,26 +307,26 @@ body {
     color: rgba(225, 225, 225, 0.8);
     text-shadow: 1.5px 1.5px 1px rgba(36, 36, 36, 0.9);
     font-size: 1em; }
-    /* line 60, mixins.sass */
+    /* line 61, mixins.sass */
     #overview > div:nth-of-type(2n) a {
       color: #fba600;
       margin-left: 1em; }
-      /* line 64, mixins.sass */
+      /* line 65, mixins.sass */
       #overview > div:nth-of-type(2n) a:hover {
         text-decoration: none; }
-  /* line 69, mixins.sass */
+  /* line 70, mixins.sass */
   #overview > div:nth-of-type(1) {
     border-bottom: 0.15em solid rgba(0, 0, 0, 0.8); }
-    /* line 15, mixins.sass */
+    /* line 16, mixins.sass */
     #overview > div:nth-of-type(1) > h1 {
       position: relative;
       text-align: center;
-      font-family: "Exo" sans-serif;
+      font-family: "Exo" arial sans-serif;
       font-size: 4em;
       color: #191919;
       text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.8);
       letter-spacing: 0.2em; }
-    /* line 74, mixins.sass */
+    /* line 75, mixins.sass */
     #overview > div:nth-of-type(1) > h1 {
       margin-bottom: 0;
       font-size: 3em; }
@@ -267,7 +339,7 @@ body {
   width: 80%;
   margin: 0 auto;
   display: block; }
-  /* line 52, mixins.sass */
+  /* line 53, mixins.sass */
   #projects > div:nth-of-type(2n) {
     margin-top: 1em;
     background: #d4d4d4 url("../images/debut_dark.png");
@@ -275,7 +347,7 @@ body {
     border-radius: 0.2em;
     box-shadow: 0.4em 0.4em 0.5em rgba(36, 36, 36, 0.8);
     padding: 1em;
-    font-family: "Exo" sans-serif;
+    font-family: "Exo" arial sans-serif;
     font-size: 1.9em;
     -webkit-animation: fade_in 4s;
     -moz-animation: fade_in 4s;
@@ -283,26 +355,26 @@ body {
     color: rgba(225, 225, 225, 0.8);
     text-shadow: 1.5px 1.5px 1px rgba(36, 36, 36, 0.9);
     font-size: 1em; }
-    /* line 60, mixins.sass */
+    /* line 61, mixins.sass */
     #projects > div:nth-of-type(2n) a {
       color: #fba600;
       margin-left: 1em; }
-      /* line 64, mixins.sass */
+      /* line 65, mixins.sass */
       #projects > div:nth-of-type(2n) a:hover {
         text-decoration: none; }
-  /* line 69, mixins.sass */
+  /* line 70, mixins.sass */
   #projects > div:nth-of-type(1) {
     border-bottom: 0.15em solid rgba(0, 0, 0, 0.8); }
-    /* line 15, mixins.sass */
+    /* line 16, mixins.sass */
     #projects > div:nth-of-type(1) > h1 {
       position: relative;
       text-align: center;
-      font-family: "Exo" sans-serif;
+      font-family: "Exo" arial sans-serif;
       font-size: 4em;
       color: #191919;
       text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.8);
       letter-spacing: 0.2em; }
-    /* line 74, mixins.sass */
+    /* line 75, mixins.sass */
     #projects > div:nth-of-type(1) > h1 {
       margin-bottom: 0;
       font-size: 3em; }
@@ -315,7 +387,7 @@ body {
   width: 80%;
   margin: 0 auto;
   display: block; }
-  /* line 52, mixins.sass */
+  /* line 53, mixins.sass */
   #experience > div:nth-of-type(2n) {
     margin-top: 1em;
     background: #d4d4d4 url("../images/debut_dark.png");
@@ -323,7 +395,7 @@ body {
     border-radius: 0.2em;
     box-shadow: 0.4em 0.4em 0.5em rgba(36, 36, 36, 0.8);
     padding: 1em;
-    font-family: "Exo" sans-serif;
+    font-family: "Exo" arial sans-serif;
     font-size: 1.9em;
     -webkit-animation: fade_in 4s;
     -moz-animation: fade_in 4s;
@@ -331,26 +403,26 @@ body {
     color: rgba(225, 225, 225, 0.8);
     text-shadow: 1.5px 1.5px 1px rgba(36, 36, 36, 0.9);
     font-size: 1em; }
-    /* line 60, mixins.sass */
+    /* line 61, mixins.sass */
     #experience > div:nth-of-type(2n) a {
       color: #fba600;
       margin-left: 1em; }
-      /* line 64, mixins.sass */
+      /* line 65, mixins.sass */
       #experience > div:nth-of-type(2n) a:hover {
         text-decoration: none; }
-  /* line 69, mixins.sass */
+  /* line 70, mixins.sass */
   #experience > div:nth-of-type(1) {
     border-bottom: 0.15em solid rgba(0, 0, 0, 0.8); }
-    /* line 15, mixins.sass */
+    /* line 16, mixins.sass */
     #experience > div:nth-of-type(1) > h1 {
       position: relative;
       text-align: center;
-      font-family: "Exo" sans-serif;
+      font-family: "Exo" arial sans-serif;
       font-size: 4em;
       color: #191919;
       text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.8);
       letter-spacing: 0.2em; }
-    /* line 74, mixins.sass */
+    /* line 75, mixins.sass */
     #experience > div:nth-of-type(1) > h1 {
       margin-bottom: 0;
       font-size: 3em; }
@@ -363,7 +435,7 @@ body {
   width: 80%;
   margin: 0 auto;
   display: block; }
-  /* line 52, mixins.sass */
+  /* line 53, mixins.sass */
   #skills > div:nth-of-type(2n) {
     margin-top: 1em;
     background: #d4d4d4 url("../images/debut_dark.png");
@@ -371,7 +443,7 @@ body {
     border-radius: 0.2em;
     box-shadow: 0.4em 0.4em 0.5em rgba(36, 36, 36, 0.8);
     padding: 1em;
-    font-family: "Exo" sans-serif;
+    font-family: "Exo" arial sans-serif;
     font-size: 1.9em;
     -webkit-animation: fade_in 4s;
     -moz-animation: fade_in 4s;
@@ -379,26 +451,26 @@ body {
     color: rgba(225, 225, 225, 0.8);
     text-shadow: 1.5px 1.5px 1px rgba(36, 36, 36, 0.9);
     font-size: 1em; }
-    /* line 60, mixins.sass */
+    /* line 61, mixins.sass */
     #skills > div:nth-of-type(2n) a {
       color: #fba600;
       margin-left: 1em; }
-      /* line 64, mixins.sass */
+      /* line 65, mixins.sass */
       #skills > div:nth-of-type(2n) a:hover {
         text-decoration: none; }
-  /* line 69, mixins.sass */
+  /* line 70, mixins.sass */
   #skills > div:nth-of-type(1) {
     border-bottom: 0.15em solid rgba(0, 0, 0, 0.8); }
-    /* line 15, mixins.sass */
+    /* line 16, mixins.sass */
     #skills > div:nth-of-type(1) > h1 {
       position: relative;
       text-align: center;
-      font-family: "Exo" sans-serif;
+      font-family: "Exo" arial sans-serif;
       font-size: 4em;
       color: #191919;
       text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.8);
       letter-spacing: 0.2em; }
-    /* line 74, mixins.sass */
+    /* line 75, mixins.sass */
     #skills > div:nth-of-type(1) > h1 {
       margin-bottom: 0;
       font-size: 3em; }
@@ -422,7 +494,7 @@ body {
   width: 80%;
   margin: 0 auto;
   display: block; }
-  /* line 52, mixins.sass */
+  /* line 53, mixins.sass */
   #school > div:nth-of-type(2n) {
     margin-top: 1em;
     background: #d4d4d4 url("../images/debut_dark.png");
@@ -430,7 +502,7 @@ body {
     border-radius: 0.2em;
     box-shadow: 0.4em 0.4em 0.5em rgba(36, 36, 36, 0.8);
     padding: 1em;
-    font-family: "Exo" sans-serif;
+    font-family: "Exo" arial sans-serif;
     font-size: 1.9em;
     -webkit-animation: fade_in 4s;
     -moz-animation: fade_in 4s;
@@ -438,26 +510,26 @@ body {
     color: rgba(225, 225, 225, 0.8);
     text-shadow: 1.5px 1.5px 1px rgba(36, 36, 36, 0.9);
     font-size: 1em; }
-    /* line 60, mixins.sass */
+    /* line 61, mixins.sass */
     #school > div:nth-of-type(2n) a {
       color: #fba600;
       margin-left: 1em; }
-      /* line 64, mixins.sass */
+      /* line 65, mixins.sass */
       #school > div:nth-of-type(2n) a:hover {
         text-decoration: none; }
-  /* line 69, mixins.sass */
+  /* line 70, mixins.sass */
   #school > div:nth-of-type(1) {
     border-bottom: 0.15em solid rgba(0, 0, 0, 0.8); }
-    /* line 15, mixins.sass */
+    /* line 16, mixins.sass */
     #school > div:nth-of-type(1) > h1 {
       position: relative;
       text-align: center;
-      font-family: "Exo" sans-serif;
+      font-family: "Exo" arial sans-serif;
       font-size: 4em;
       color: #191919;
       text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.8);
       letter-spacing: 0.2em; }
-    /* line 74, mixins.sass */
+    /* line 75, mixins.sass */
     #school > div:nth-of-type(1) > h1 {
       margin-bottom: 0;
       font-size: 3em; }

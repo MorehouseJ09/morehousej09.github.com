@@ -1,1 +1,72 @@
 @import url(http://fonts.googleapis.com/css?family=Exo:400,900);
+@-webkit-keyframes rise {
+  /* line 3, animations.css.sass */
+  0% {
+    top: 30em;
+    -webkit-transform: scale(0);
+    opacity: 0; }
+
+  /* line 7, animations.css.sass */
+  50% {
+    top: 15em;
+    -webkit-transform: scale(0); }
+
+  /* line 10, animations.css.sass */
+  82.5% {
+    -webkit-transform: scale(1.05);
+    -webkit-animation-timing-function: ease-out;
+    opacity: 1; }
+
+  /* line 14, animations.css.sass */
+  100% {
+    top: 2em;
+    -webkit-transform: scale(1); } }
+
+@-moz-keyframes rise {
+  /* line 19, animations.css.sass */
+  0% {
+    top: 30em;
+    -moz-transform: scale(0);
+    opacity: 0; }
+
+  /* line 23, animations.css.sass */
+  50% {
+    top: 15em;
+    -moz-transform: scale(0); }
+
+  /* line 26, animations.css.sass */
+  82.5% {
+    -moz-transform: scale(1.05);
+    -moz-animation-timing-function: ease-out;
+    opacity: 1; }
+
+  /* line 30, animations.css.sass */
+  100% {
+    top: 2em;
+    -moz-transform: scale(1); } }
+
+@-webkit-keyframes fade_in {
+  /* line 43, animations.css.sass */
+  0% {
+    opacity: 0; }
+
+  /* line 45, animations.css.sass */
+  50% {
+    opacity: 0; }
+
+  /* line 47, animations.css.sass */
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fade_in {
+  /* line 52, animations.css.sass */
+  0% {
+    opacity: 0; }
+
+  /* line 54, animations.css.sass */
+  50% {
+    opacity: 0; }
+
+  /* line 56, animations.css.sass */
+  100% {
+    opacity: 1; } }
